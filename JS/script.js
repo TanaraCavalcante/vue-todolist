@@ -3,7 +3,6 @@ const {createApp} = Vue;
 createApp ({
     data(){
         return {
-         currentIndex: 0,
          newElement : '',
          list:[
             {
@@ -34,7 +33,19 @@ createApp ({
         }
     },
     methods:{
-       
+        isDone(){
+          if(this.list.done === false){
+            this.list.done === true;
+            return;
+          }else if(this.list.done === true){
+            this.list.done === false;
+            return;
+          }
+        },
+        
+        toDelete(){
+            this.list.splice(this.list.element, 1);
+        }
 
     },
 }).mount('#app')

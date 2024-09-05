@@ -1,0 +1,9 @@
+i.fa-x.fa-x:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.risco{
+    text-decoration: line-through;
+}
+
