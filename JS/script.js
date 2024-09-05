@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp ({
     data(){
         return {
+         newElement : '';
          list:[
             {
                 text: 'Fare colazione',
@@ -32,17 +33,11 @@ createApp ({
         }
     },
     methods:{
-        isDone() {
-            if(this.list.done == false){
-               this.list.done == true;
-               return;
-            }else {
-                this.list.done == false;
-            }
-        }
+       
 
     },
 }).mount('#app')
 
 //Criar um booleano pra definir se "done" é verdadeiro ou falso;
-//Conectar esse booleano com o "X" botao ao lado de cada item da lista.
+//Cria o "X" botao ao lado de cada item da lista e adicionar a açao splice.
+//Criar um metodo conectado com um input e botao para adicionar um novo item.
