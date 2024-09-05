@@ -4,7 +4,7 @@ createApp ({
     data(){
         return {
          currentIndex: 0,
-         newElement : '';
+         newElement : '',
          list:[
             {
                 text: 'Fare colazione',
